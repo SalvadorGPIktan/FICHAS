@@ -120,7 +120,7 @@ function uniqueFichaCounts(rows,key){const m=new Map();rows.forEach(x=>{const k=
     initializeDataUI();
     installMapDelegation();
     apply();
-    $('cut').textContent='Fuente: GitHub · fichaspruebas.xlsx · '+DATA.length.toLocaleString('es-MX')+' fichas';
+    $('cut').textContent = DATA.length.toLocaleString('es-MX') + ' fichas';
   }catch(err){
     console.error(err);
     if($('kTotal'))$('kTotal').textContent='ERROR';
